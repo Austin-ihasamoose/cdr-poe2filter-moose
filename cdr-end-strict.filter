@@ -2570,13 +2570,13 @@ Show # $type->uniques $tier->multispecial
 #   [4205] Low tier exceptions
 #------------------------------------
 
-Show  # %H5 $type->uniques $tier->earlyleague MOOSE
-	Rarity Unique
-	SetFontSize 45
-	SetTextColor 175 96 37 255
-	SetBorderColor 175 96 37 255
-	SetBackgroundColor 10 30 45 255
-	MinimapIcon 2 Brown Star
+#Show  # %H5 $type->uniques $tier->earlyleague
+#	Rarity Unique
+#	SetFontSize 45
+#	SetTextColor 175 96 37 255
+#	SetBorderColor 175 96 37 255
+#	SetBackgroundColor 10 30 45 255
+#	MinimapIcon 2 Brown Star
 
 Show # %D5 $type->uniques $tier->enchanteduniques
 	AnyEnchantment True
