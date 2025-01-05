@@ -861,7 +861,20 @@ Show # t3
 	BaseType == "Crimson Amulet" "Azure Amulet" "Iron Ring" "Lazuli Ring" "Emerald Ring" "Pearl Ring" "Linen Belt" "Wide Belt" "Long Belt" "Ornate Belt" "Double Belt" "Staunching Charm" "Ruby Charm" "Sapphire Charm" "Topaz Charm"
 	SetFontSize 35
 	SetBackgroundColor 20 20 0 255
-	
+
+#===============================================================================================================
+# [[2400]] Endgame - Magic - Gear - MOOSE
+#===============================================================================================================
+Show #T1 2H Weapons
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 78
+	Rarity Magic
+	BaseType == "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Expert Slicing Quarterstaff" "Expert Bombard Crossbow" "Expert Scalper's Jacket" "Expert Wayfarer Jacket" "Expert Altar Robe" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Iron Cuirass" "Golden Obi" "Rawhide Belt" "Wide Belt" "Mail Belt" "Fine Belt"
+	SetFontSize 35
+	SetBorderColor 0 128 255 160
+	SetBackgroundColor 8 0 255 160
+
 #===============================================================================================================
 # [[2400]] Endgame - Rare - Gear
 #===============================================================================================================
@@ -883,6 +896,13 @@ Show # t1
 	# SetFontSize 40
 	# SetBorderColor 0 240 190 180
 	# PlayEffect Blue Temp
+
+Show # t2 rares moose custom
+	ItemLevel >= 65
+	Rarity Rare
+	BaseType == "Expert Threaded Shoes" "Expert Frayed Shoes" "Expert Silk Slippers" "Expert Steeltoe Boots" "Expert Linen Wraps" "Expert Jewelled Gloves"
+	SetFontSize 35
+	SetBackgroundColor 80 80 80 100
 
 # Show # remaining t2-t3-t4
 	# ItemLevel >= 65
@@ -2550,15 +2570,13 @@ Show # $type->uniques $tier->multispecial
 #   [4205] Low tier exceptions
 #------------------------------------
 
-# Show  # %H5 $type->uniques $tier->earlyleague
-	# Rarity Unique
-	# SetFontSize 45
-	# SetTextColor 175 96 37 255
-	# SetBorderColor 175 96 37 255
-	# SetBackgroundColor 10 30 45 255
-	# PlayAlertSound 3 300
-	# PlayEffect Brown
-	# MinimapIcon 2 Brown Star
+Show  # %H5 $type->uniques $tier->earlyleague MOOSE
+	Rarity Unique
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 10 30 45 255
+	MinimapIcon 2 Brown Star
 
 Show # %D5 $type->uniques $tier->enchanteduniques
 	AnyEnchantment True
