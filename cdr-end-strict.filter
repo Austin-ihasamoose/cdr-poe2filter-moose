@@ -146,16 +146,6 @@ Show
 #   [1006] Relics (Trial of the Sekhemas aka Sanctum)
 #------------------------------------
 
-Hide # Hide poor tier relics entirely MOOSE
-	Class == "Relics"
-	BaseType == "Urn Relic" "Vase Relic" "Seal Relic"
-	Rarity <= Magic
-	SetFontSize 1
-	SetTextColor 0 0 0 0
-	SetBorderColor 0 0 0 0
-	SetBackgroundColor 0 0 0 0
-	DisableDropSound True
-
 Show # Make basic relics transparent/white high iLVL only
 	Class == "Relics"
 	ItemLevel >= 82
@@ -178,6 +168,16 @@ Show
 	PlayAlertSound 2 300
 	PlayEffect Blue
 	MinimapIcon 2 Blue Diamond
+
+Hide # Hide poor tier relics entirely MOOSE
+	Class == "Relics"
+	BaseType == "Urn Relic" "Vase Relic" "Seal Relic"
+	Rarity <= Magic
+	SetFontSize 1
+	SetTextColor 0 0 0 0
+	SetBorderColor 0 0 0 0
+	SetBackgroundColor 0 0 0 0
+	DisableDropSound True
 
 #===============================================================================================================
 # [[1300]] High Level Crafting Bases
