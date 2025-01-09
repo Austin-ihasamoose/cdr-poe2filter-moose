@@ -146,15 +146,15 @@ Show
 #   [1006] Relics (Trial of the Sekhemas aka Sanctum)
 #------------------------------------
 
-# Hide # GGG will not allow you to hide relics, uncomment this rule if you want to "hide" them via making them transparent
-# 	Class == "Relics"
-# 	BaseType == "Urn Relic" "Amphora Relic" "Vase Relic" "Seal Relic" "Coffer Relic" "Tapestry Relic" "Incense Relic"
-# 	Rarity <= Magic
-# 	SetFontSize 1
-# 	SetTextColor 0 0 0 0
-# 	SetBorderColor 0 0 0 0
-# 	SetBackgroundColor 0 0 0 0
-# 	DisableDropSound True
+Hide # GGG will not allow you to hide relics, uncomment this rule if you want to "hide" them via making them transparent MOOSE
+	Class == "Relics"
+	BaseType == "Urn Relic" "Vase Relic" "Seal Relic" "Coffer Relic" "Incense Relic"
+	Rarity <= Magic
+	SetFontSize 1
+	SetTextColor 0 0 0 0
+	SetBorderColor 0 0 0 0
+	SetBackgroundColor 0 0 0 0
+	DisableDropSound True
 
 Show
 	Class == "Relics"
@@ -1624,7 +1624,7 @@ Show # Trial Coins special
 	PlayEffect Red
 	MinimapIcon 0 Red Hexagon
 
-Hide # Djinn Barya 4 trials i80
+Show # Djinn Barya 4 trials i80 MOOSE
 	Class == "Trial Coins"
 	BaseType == "Djinn Barya"
 	Rarity == Normal
@@ -1637,7 +1637,7 @@ Hide # Djinn Barya 4 trials i80
 	# PlayEffect Yellow
 	# MinimapIcon 2 Yellow Hexagon
 
-Hide # Djinn Barya 4 trials (4th ascension)
+Show # Djinn Barya 4 trials (4th ascension) MOOSE
 	Class == "Trial Coins"
 	BaseType == "Djinn Barya"
 	Rarity == Normal
