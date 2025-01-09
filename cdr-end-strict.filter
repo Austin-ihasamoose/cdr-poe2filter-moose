@@ -146,12 +146,23 @@ Show
 #   [1006] Relics (Trial of the Sekhemas aka Sanctum)
 #------------------------------------
 
-Hide # GGG will not allow you to hide relics, uncomment this rule if you want to "hide" them via making them transparent MOOSE
+Hide # Hide poor tier relics entirely MOOSE
 	Class == "Relics"
-	BaseType == "Urn Relic" "Vase Relic" "Seal Relic" "Coffer Relic" "Incense Relic"
+	BaseType == "Urn Relic" "Vase Relic" "Seal Relic"
 	Rarity <= Magic
 	SetFontSize 1
 	SetTextColor 0 0 0 0
+	SetBorderColor 0 0 0 0
+	SetBackgroundColor 0 0 0 0
+	DisableDropSound True
+
+Show # Make basic relics transparent/white high iLVL only
+	Class == "Relics"
+	ItemLevel >= 82
+	BaseType == "Urn Relic" "Vase Relic" "Seal Relic" "Coffer Relic" "Incense Relic"
+	Rarity <= Magic
+	SetFontSize 15
+	SetTextColor 0 240 190 255
 	SetBorderColor 0 0 0 0
 	SetBackgroundColor 0 0 0 0
 	DisableDropSound True
