@@ -146,20 +146,20 @@ Show
 #   [1006] Relics (Trial of the Sekhemas aka Sanctum)
 #------------------------------------
 
-Show # Make basic relics transparent/white high iLVL only
+Show # Make basic relics transparent/white high iLVL only MOOSE
 	Class == "Relics"
-	ItemLevel >= 82
-	BaseType == "Urn Relic" "Vase Relic" "Seal Relic" "Coffer Relic" "Incense Relic"
+	ItemLevel >= 80
+	BaseType == "Urn Relic" "Vase Relic" "Seal Relic" "Incense Relic"
 	Rarity <= Magic
-	SetFontSize 15
+	SetFontSize 30
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 0 0 0
 	SetBackgroundColor 0 0 0 0
 	DisableDropSound True
 
-Show
+Show # Moose
 	Class == "Relics"
-	BaseType == "Urn Relic" "Amphora Relic" "Vase Relic" "Seal Relic" "Coffer Relic" "Tapestry Relic" "Incense Relic"
+	BaseType == "Amphora Relic" "Tapestry Relic"
 	Rarity <= Magic
 	SetFontSize 45
 	SetTextColor 0 240 190 255
@@ -171,7 +171,7 @@ Show
 
 Hide # Hide poor tier relics entirely MOOSE
 	Class == "Relics"
-	BaseType == "Urn Relic" "Vase Relic" "Seal Relic"
+	BaseType == "Urn Relic" "Vase Relic" "Seal Relic" "Incense Relic" "Coffer Relic"
 	Rarity <= Magic
 	SetFontSize 1
 	SetTextColor 0 0 0 0
@@ -293,13 +293,22 @@ Show #T1 Jewellery
 	SetFontSize 45
 	SetBorderColor 255 125 0 160
 
-# Show # T2 Jewellery
-# 	Mirrored False
-# 	Corrupted False
-# 	ItemLevel >= 82
-# 	Rarity Normal Magic
-# 	BaseType == "Gold Amulet" "Unset Ring" "Gold Ring" "Linen Belt" "Plate Belt" "Mail Belt" "Heavy Belt"
-# 	SetBorderColor 255 125 0 160
+Show # T2  MOOSE
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 82
+	Rarity Normal Magic
+	BaseType == "Gold Amulet" "Unset Ring" "Gold Ring" "Plate Belt" "Mail Belt"
+	SetBorderColor 255 125 0 160
+
+Show # T1/2 magics moose
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 80
+	Rarity Magic
+	BaseType == "Gold Amulet" "Unset Ring" "Gold Ring" "Mail Belt" "Bloodstone Amulet" "Solar Amulet" "Lunar Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Stellar Amulet" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Pearl Ring" "Rawhide Belt" "Utility Belt"
+	SetBorderColor 255 125 0 160
+
 
 # Show # T3 Jewellery
 # 	Mirrored False
@@ -861,7 +870,7 @@ Show # t2
 	ItemLevel >= 65
 	Rarity Rare
 	Class == "Amulets" "Rings" "Belts" "Charms"
-	BaseType == "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Stellar Amulet" "Unset Ring" "Plate Belt" "Mail Belt" "Heavy Belt" "Amethyst Charm" "Silver Charm" "Grounding Charm"
+	BaseType == "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Stellar Amulet" "Unset Ring" "Mail Belt"
 	SetFontSize 40
 	SetBackgroundColor 0 40 10 255
 
@@ -869,7 +878,7 @@ Show # t3
 	ItemLevel >= 65
 	Rarity Rare
 	Class == "Amulets" "Rings" "Belts" "Charms"
-	BaseType == "Crimson Amulet" "Azure Amulet" "Iron Ring" "Lazuli Ring" "Emerald Ring" "Pearl Ring" "Linen Belt" "Wide Belt" "Long Belt" "Ornate Belt" "Double Belt" "Staunching Charm" "Ruby Charm" "Sapphire Charm" "Topaz Charm"
+	BaseType == "Crimson Amulet" "Azure Amulet" "Iron Ring" "Lazuli Ring" "Pearl Ring" "Linen Belt" "Wide Belt" "Long Belt" "Double Belt" "Staunching Charm" "Ruby Charm" "Sapphire Charm" "Topaz Charm"
 	SetFontSize 35
 	SetBackgroundColor 20 20 0 255
 
@@ -893,7 +902,7 @@ Show #T1 2H Weapons
 Show # t1
 	ItemLevel >= 65
 	Rarity Rare
-	BaseType == "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Moulded Mitts" "Expert Spiral Wraps" "Expert Feathered Sandals" "Expert Lizardscale Boots" "Expert Stone Greaves" "Expert Hunting Shoes" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Iron Cuirass" "Expert Scalper's Jacket" "Expert Feathered Tiara" "Expert Hunter Hood" "Expert Elite Greathelm" "Expert Tribal Mask" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Crystal Focus" "Expert Plumed Focus" "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Expert Gothic Quarterstaff" "Rattling Sceptre" "Omen Sceptre" "Attuned Wand" "Siphoning Wand" "Chiming Staff" "Primed Quiver"
+	BaseType == "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Moulded Mitts" "Expert Spiral Wraps" "Expert Feathered Sandals" "Expert Lizardscale Boots" "Expert Stone Greaves" "Expert Hunting Shoes" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Iron Cuirass" "Expert Scalper's Jacket" "Expert Feathered Tiara" "Expert Hunter Hood" "Expert Elite Greathelm" "Expert Tribal Mask" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Crystal Focus" "Expert Plumed Focus" "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Expert Gothic Quarterstaff" "Rattling Sceptre" "Omen Sceptre" "Attuned Wand" "Siphoning Wand" "Primed Quiver"
 	SetFontSize 45
 	SetBackgroundColor 20 20 0 255
 
@@ -1852,10 +1861,10 @@ Show # %D8 $type->currency->stackedsix $tier->t2
 	PlayEffect Red
 	MinimapIcon 0 Red Circle
 
-Show # $type->currency->stacked $tier->t3
+Show # $type->currency->stacked $tier->t3 MOOSE
 	StackSize >= 2
 	Class == "Stackable Currency"
-	BaseType == "Glassblower's Bauble" "Orb of Alchemy" "Artificer's Orb" "Arcanist's Etcher" "Lesser Jeweller's Orb" "Black Scythe Artifact" "Sun Artifact" "Vaal Orb" "Regal Orb" "Armourer's Scrap" "Blacksmith's Whetstone" "Chance Shard" "Neural Catalyst" "Xoph's Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Reaver Catalyst" "Chayula's Catalyst" "Essence of Torment" "Essence of Haste" "Essence of Electricity" "Essence of Battle" "Essence of Sorcery" "Essence of Ruin"
+	BaseType == "Glassblower's Bauble" "Orb of Alchemy" "Artificer's Orb" "Lesser Jeweller's Orb" "Black Scythe Artifact" "Sun Artifact" "Vaal Orb" "Regal Orb" "Armourer's Scrap" "Blacksmith's Whetstone" "Chance Shard" "Neural Catalyst" "Xoph's Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Reaver Catalyst" "Chayula's Catalyst" "Essence of Torment" "Essence of Haste" "Essence of Electricity" "Essence of Battle" "Essence of Sorcery" "Essence of Ruin"
 	SetFontSize 45
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -1944,7 +1953,7 @@ Show # %HS4 $type->currency $tier->t5glassblower
 
 Show # %HS3 $type->currency $tier->t6artificer
 	Class == "Stackable Currency"
-	BaseType == "Black Scythe Artifact" "Sun Artifact" "Arcanist's Etcher" "Broken Circle Artifact" "Blacksmith's Whetstone" "Order Artifact"
+	BaseType == "Black Scythe Artifact" "Sun Artifact" "Broken Circle Artifact" "Blacksmith's Whetstone" "Order Artifact"
 	SetFontSize 35
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -1961,9 +1970,9 @@ Hide # %HS2 $type->currency $tier->t7whetstone
 	SetBackgroundColor 210 178 135 255
 	DisableDropSound True
 
-Hide # %H2 $type->currency $tier->t8shard
+Hide # %H2 $type->currency $tier->t8shard moose
 	Class == "Stackable Currency"
-	BaseType == "Artificer's Shard" "Regal Shard"
+	BaseType == "Artificer's Shard" "Regal Shard" "Arcanist's Etcher"
 	SetFontSize 35
 	SetTextColor 190 178 135 255
 	SetBorderColor 190 178 135 255
