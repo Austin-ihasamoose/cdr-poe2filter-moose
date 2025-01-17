@@ -151,7 +151,7 @@ Show # Make basic relics transparent/white high iLVL only MOOSE
 	ItemLevel >= 80
 	BaseType == "Urn Relic" "Vase Relic" "Seal Relic" "Incense Relic"
 	Rarity <= Magic
-	SetFontSize 30
+	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 0 0 0
 	SetBackgroundColor 0 0 0 0
@@ -566,14 +566,15 @@ Show # normaldecoratorremover
 # [[1400]] Chancing Bases
 #===============================================================================================================
 
-Show # %D1 $type->chancing $tier->hh
+Show # %D1 $type->chancing $tier->hh MOOSE
 	Mirrored False
 	Corrupted False
 	Rarity Normal
-	BaseType == "Heavy Belt" "Stellar Amulet" "Azure Amulet" "Emerald Ring" "Sapphire Ring"
+	BaseType == "Heavy Belt" "Stellar Amulet"
 	SetFontSize 40
 	SetTextColor 255 255 255 255
 	SetBorderColor 0 150 0 255
+	SetBackgroundColor 205 205 14 240
 
 #------------------------------------
 #   [1309] Salvage
@@ -2590,13 +2591,13 @@ Show # $type->uniques $tier->multispecial
 #   [4205] Low tier exceptions
 #------------------------------------
 
-#Show  # %H5 $type->uniques $tier->earlyleague
-#	Rarity Unique
-#	SetFontSize 45
-#	SetTextColor 175 96 37 255
-#	SetBorderColor 175 96 37 255
-#	SetBackgroundColor 10 30 45 255
-#	MinimapIcon 2 Brown Star
+Show  # %H5 $type->uniques $tier->earlyleague
+	Rarity Unique
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 10 30 45 255
+	MinimapIcon 2 Brown Star
 
 Show # %D5 $type->uniques $tier->enchanteduniques
 	AnyEnchantment True
