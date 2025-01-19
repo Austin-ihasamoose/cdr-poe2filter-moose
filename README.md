@@ -1,53 +1,23 @@
-# cdr's Path of Exile 2 filters
+## cdr's Path of Exile 2 filters
 
-https://ko-fi.com/cdrkf => My ko-fi, like patreon
+# Distribution of my PoE2 filters has moved to [my profile on pathofexile.com](https://www.pathofexile.com/account/view-profile/cdrpoe-1004/item-filters)
+## Click the link, scroll to the bottom of the page, click a PoE2 filter link, click the green "Follow" button
+## Once you've clicked "Follow", the filter will be automatically updated in your game forever! You never have to do anything else for it agian.
+
+![image](https://github.com/user-attachments/assets/763bb491-63b1-4812-ad04-f04f14546ecf)
+
+![image](https://github.com/user-attachments/assets/89aa5693-73b6-4929-ac7b-6c9e154b0978)
+
+[**FilterBlade link**](https://www.filterblade.xyz/Profile?name=cdrpoe&game=Poe2) available if you want to make your own edits.
+
+This github repository will remain for convenience but will not be updated.
+
+-> https://ko-fi.com/cdrkf <- My ko-fi, like patreon, if you would like to support my development
 
 Currently two: 
 
-> **cdr-endgame.filter**, for all endgame content, eg waystone tier 1 - tier 15+.
+> **cdr-endgame.filter**, for all endgame content, eg waystone tier 1 - tier 14+.
 
-~80% feature parity with NeverSink Path of Exile 1 filter.
-- All known PoE2 items explicity handled by name.
-- Economy tiering for all currency, uniques, etc.
--   NOTE: As there are no API data sources, eco tiering updated infrequently if at all.
-- Progression for waystones, uncut gems, etc.
-- Tiering of all bases.
-
-Currently almost nothing is hidden, besides non-best normal/magic bases.
-
-You're encouraged to edit to your own liking.
-
-HIDE THINGS AT YOUR OWN RISK. Tiering is not perfect and values can change quickly.
-
-> **cdr-end-strict.filter**, for true endgame farming, waystone tier 15+ only.
-
-Most things worth less than ~1ex average are hidden. Non-jewellery bases are hidden. Non-best rares are hidden.
-
-USE AT YOUR OWN RISK. Available in the release source zip or GitHub source above.
-
+> **cdr-end-uber.filter**, for true endgame farming, waystone tier 15+.
 ----
-Feedback welcome on FilterBlade Discord or [reddit](https://www.reddit.com/r/PathOfExile2/comments/1heq76s/filter_cdrs_endgame_poe2_filter_a_1600_line_fully/).
-
-Built on NeverSink's PoE1 filter structure.  
-https://www.filterblade.xyz/: Path of Exile 2 support coming in a few weeks.  
-FilterBlade Discord: https://discord.gg/zFEx92a  
-NeverSink Twitch:    https://www.twitch.tv/neversink  
-NeverSink github:    @NeverSinkDev  
-NeverSink Patreon:  www.patreon.com/Neversink  
-
-My PoE1 filters: https://www.pathofexile.com/account/view-profile/cdrpoe-1004/item-filters
-
-----
-# How to download and use:
-
-Go to Releases  
-![image](https://github.com/user-attachments/assets/2fc2cba9-ad0a-455c-a690-7a778ec44f32)
-
-Download the latest .filter file  
-![image](https://github.com/user-attachments/assets/9e0b4a97-9f70-4228-9b62-bb8a6473be1b)
-
-Move the .filter file to \Documents\My Games\Path of Exile 2  
-![image](https://github.com/user-attachments/assets/0fed0bbb-87cd-4bec-b802-7a32a7453ba4)
-
-Select the filter in the game options drop-down, or press reload 🔃 if it was already selected  
-![image](https://github.com/user-attachments/assets/2a2c8ce9-d4e6-4d52-90ff-be0fad4af50e)
+Feedback welcome on [FilterBlade Discord](https://discord.gg/zFEx92a) or [reddit](https://www.reddit.com/r/pathofexile/comments/1hpcbvw/filter_cdrs_endgame_poe2_filter_new_major_version/).
