@@ -2,7 +2,7 @@
 
 # Distribution of my PoE2 filters has moved to [my profile on pathofexile.com](https://www.pathofexile.com/account/view-profile/cdrpoe-1004/item-filters)
 ## Click the link, scroll to the bottom of the page, click a PoE2 filter link, click the green "Follow" button
-## Once you've clicked "Follow", the filter will be automatically updated in your game forever! You never have to do anything else for it agian.
+## Once you've clicked "Follow", the filter will be automatically updated in your game forever! You never have to do anything else for it again.
 
 ![image](https://github.com/user-attachments/assets/763bb491-63b1-4812-ad04-f04f14546ecf)
 
